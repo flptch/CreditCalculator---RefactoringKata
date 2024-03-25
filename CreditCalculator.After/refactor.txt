@@ -1,0 +1,8 @@
+- Separation of concerns - each class should have a single responsibility, so in that case the
+CustomerService.cs is doing too much. It should delegate responsibilities like validation, age, calculation
+and credit checking to other classes or methods
+- Dependency injection - Instead of instantiating dependencies within methods, these should be injected
+through the constructor
+- Input validation
+- Avoid magic strings and numbers, those should be enums or constants
+- Repositories should use interfaces
